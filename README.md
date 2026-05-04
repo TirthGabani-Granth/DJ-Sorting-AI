@@ -77,8 +77,8 @@ Before running, you **must** configure your music paths in `backend/config.py`:
 - `INPUT_FOLDER`: Where your un-sorted songs are.
 - `OUTPUT_FOLDER`: Where you want the sorted folders to be created.
 
-### 5. Run the Application
-Start the Streamlit interface:
+### 5. 🚀 Run the AI Sorter
+To launch the application, run this command in your terminal:
 ```bash
 streamlit run frontend/app.py
 ```
@@ -89,6 +89,7 @@ streamlit run frontend/app.py
 1. **Scanning**: The AI scans your input folder for all MP3/FLV/M4A files.
 2. **Analysis**: It runs the 3-layer pipeline (Metadata -> Lyrics -> Audio).
 3. **Sorting**: It safely copies the files into the new `sorted song` structure based on the detected category.
+
 
 
 ---
