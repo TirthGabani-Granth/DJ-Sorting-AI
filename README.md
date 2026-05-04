@@ -46,24 +46,50 @@ Your music is moved into a clean, intuitive structure:
 
 ---
 
-## ⚡ Quick Start
+---
 
-### 1. Installation
+## 🛠️ How to Setup Project
+
+Follow these steps to get your DJ AI Sorter running on your local machine:
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/TirthGabani-Granth/DJ-Sorting-AI.git
+cd DJ-Sorting-AI
+```
+
+### 2. Create a Virtual Environment (Recommended)
+```bash
+python -m venv venv
+# Activate on Windows:
+.\venv\Scripts\activate
+# Activate on Mac/Linux:
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Configuration
-Update `backend/config.py` with your music folder paths:
-```python
-INPUT_FOLDER = r"C:\Your\Music\Folder"
-OUTPUT_FOLDER = r"C:\Your\Sorted\Music"
-```
+### 4. Configuration
+Before running, you **must** configure your music paths in `backend/config.py`:
+- `INPUT_FOLDER`: Where your un-sorted songs are.
+- `OUTPUT_FOLDER`: Where you want the sorted folders to be created.
 
-### 3. Launch the UI
+### 5. Run the Application
+Start the Streamlit interface:
 ```bash
 streamlit run frontend/app.py
 ```
+
+---
+
+## ⚙️ How it Works
+1. **Scanning**: The AI scans your input folder for all MP3/FLV/M4A files.
+2. **Analysis**: It runs the 3-layer pipeline (Metadata -> Lyrics -> Audio).
+3. **Sorting**: It safely copies the files into the new `sorted song` structure based on the detected category.
+
 
 ---
 
