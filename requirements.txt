@@ -1,0 +1,13 @@
+mutagen
+langdetect
+openai-whisper
+librosa
+pyacoustid
+requests
+pandas
+sqlalchemy
+fastapi
+uvicorn
+tqdm
+concurrent-log-handler
+streamlit
